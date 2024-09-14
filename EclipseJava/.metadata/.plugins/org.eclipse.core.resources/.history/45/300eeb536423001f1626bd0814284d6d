@@ -1,0 +1,16 @@
+package oo_heranca;
+
+public class CarroTeste {
+
+	public static void main(String[] args) {
+		
+		Carro ferrari = new Ferrari();
+		
+		Carro fit = new Fit();
+		
+		System.out.println(fit.mostrarKm());
+		System.out.println(ferrari.mostrarKm());
+		
+	}
+	
+}

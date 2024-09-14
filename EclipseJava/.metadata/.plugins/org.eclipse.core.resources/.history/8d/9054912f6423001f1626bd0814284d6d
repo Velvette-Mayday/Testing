@@ -1,0 +1,11 @@
+package oo_heranca;
+
+public class Ferrari extends Carro {
+
+void acelerar() {
+		
+		this.velocidade = velocidade + 15;
+		
+	}
+	
+}

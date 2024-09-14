@@ -1,0 +1,29 @@
+package exercicio2;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+
+	public static void main(String[] args) {
+		
+		Scanner entry = new Scanner(System.in);
+		
+		String ans = "";
+		double a1, a2;
+		String op;
+		
+		
+		while(!ans.equalsIgnoreCase("sair")) {
+			
+			System.out.println("Digite dois números: ");
+			a1 = entry.nextDouble();
+			a2 = entry.nextDouble();
+			
+			System.out.println("Digite o operador aritmético\nadd para adição\nsub para subtração\nmul para multiplicação\ndiv para divisão: ");
+		}
+		
+		entry.close();
+		
+	}
+	
+}

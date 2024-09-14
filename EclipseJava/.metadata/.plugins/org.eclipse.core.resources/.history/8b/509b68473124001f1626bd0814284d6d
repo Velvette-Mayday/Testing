@@ -1,0 +1,29 @@
+package oo_heranca;
+
+public class CarroTeste {
+
+	public static void main(String[] args) {
+		
+		Carro ferrari = new Ferrari();
+		
+		Carro fit = new Fit();
+		
+		System.out.println(fit.mostrarKm());
+		System.out.println(ferrari.mostrarKm());
+		
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		ferrari.acelerar();
+		
+		fit.acelerar();
+		fit.acelerar();
+		fit.acelerar();
+		fit.acelerar();
+		
+		System.out.println(fit.mostrarKm());
+		System.out.println(ferrari.mostrarKm());
+		
+	}
+	
+}

@@ -1,0 +1,11 @@
+package grupo;
+
+public class Codigo {
+
+	public String concatenar(String nome, String sobrenome) {
+		
+		return "Bem vindo(a) "+ nome + " " + sobrenome + "!";
+		
+	}
+	
+}

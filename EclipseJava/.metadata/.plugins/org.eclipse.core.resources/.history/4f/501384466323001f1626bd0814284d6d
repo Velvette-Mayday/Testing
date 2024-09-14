@@ -1,0 +1,24 @@
+package oo_heranca;
+
+public class Carro {
+	
+	double velocidade;
+
+	void acelerar() {
+		
+		this.velocidade = velocidade + 10;
+		
+	}
+	
+	void frear() {
+		
+		if(velocidade >=10) {
+			this.velocidade = velocidade - 10;
+		}
+		
+	}
+	
+	
+	
+	
+}

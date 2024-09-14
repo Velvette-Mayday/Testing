@@ -1,0 +1,102 @@
+package grupo;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Color;
+import java.awt.Toolkit;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Tela extends JFrame {
+	
+	Codigo  c = new Codigo();
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+	private JTextField tfNome;
+	private JTextField tfSobrenome;
+	private JButton btnSubmit;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Tela frame = new Tela();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Tela() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\arthu\\Downloads\\Siamese_Battler.png"));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 893, 509);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 128, 128));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Insira seu nome:");
+		lblNewLabel.setFont(new Font("Trebuchet MS", Font.PLAIN, 22));
+		lblNewLabel.setForeground(new Color(255, 255, 255));
+		lblNewLabel.setBounds(10, 10, 193, 34);
+		contentPane.add(lblNewLabel);
+		
+		tfNome = new JTextField();
+		tfNome.setForeground(new Color(255, 128, 128));
+		tfNome.setFont(new Font("Tahoma", Font.PLAIN, 22));
+		tfNome.setBounds(242, 10, 293, 31);
+		contentPane.add(tfNome);
+		tfNome.setColumns(10);
+		
+		JLabel lblInsiraSeuSobrenome = new JLabel("Insira seu sobrenome:");
+		lblInsiraSeuSobrenome.setForeground(Color.WHITE);
+		lblInsiraSeuSobrenome.setFont(new Font("Trebuchet MS", Font.PLAIN, 22));
+		lblInsiraSeuSobrenome.setBounds(10, 54, 229, 34);
+		contentPane.add(lblInsiraSeuSobrenome);
+		
+		JLabel lbNomeCompleto = new JLabel("...");
+		lbNomeCompleto.setHorizontalAlignment(SwingConstants.CENTER);
+		lbNomeCompleto.setFont(new Font("Trebuchet MS", Font.PLAIN, 27));
+		lbNomeCompleto.setForeground(new Color(255, 255, 255));
+		lbNomeCompleto.setBounds(10, 160, 847, 158);
+		contentPane.add(lbNomeCompleto);
+		
+		tfSobrenome = new JTextField();
+		tfSobrenome.setForeground(new Color(255, 128, 128));
+		tfSobrenome.setFont(new Font("Tahoma", Font.PLAIN, 22));
+		tfSobrenome.setColumns(10);
+		tfSobrenome.setBounds(242, 57, 293, 31);
+		contentPane.add(tfSobrenome);
+		
+		btnSubmit = new JButton("Enviar\r\n");
+		btnSubmit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lbNomeCompleto.setText(c.concatenar(tfNome.getText(), tfSobrenome.getName());
+			}
+		});
+		btnSubmit.setForeground(new Color(255, 128, 128));
+		btnSubmit.setFont(new Font("Trebuchet MS", Font.PLAIN, 22));
+		btnSubmit.setBounds(606, 24, 231, 52);
+		contentPane.add(btnSubmit);
+	}
+}

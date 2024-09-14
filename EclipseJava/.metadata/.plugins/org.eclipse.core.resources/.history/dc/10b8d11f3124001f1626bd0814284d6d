@@ -1,0 +1,18 @@
+package oo_heranca;
+
+public class Ferrari extends Carro {
+
+void acelerar() {
+		
+		this.velocidade = velocidade + 15;
+		
+	}
+
+String mostrarKm() {
+	
+	return String.format("A Ferrari roda a: %.2fKm/h", this.velocidade);
+	
+}
+
+	
+}

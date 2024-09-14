@@ -1,0 +1,13 @@
+package lambdas;
+
+public class ProdutoTeste {
+
+	public static void main(String[] args) {
+		
+		Produto p1 = new Produto("Notebook", 1030.50, 0.15);
+		
+		System.out.println(p1.isExpensive());
+		
+	}
+	
+}

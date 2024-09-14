@@ -1,0 +1,15 @@
+package arrays;
+
+public class Array_Matriz {
+
+	public static void main(String[] args) {
+		
+		int pop [][] = new int[4][5];
+		
+		pop[3][4] = 1;
+		
+		
+		
+	}
+	
+}

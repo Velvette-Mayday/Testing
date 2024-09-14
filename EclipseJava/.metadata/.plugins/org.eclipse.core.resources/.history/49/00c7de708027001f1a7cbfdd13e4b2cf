@@ -1,0 +1,10 @@
+package oo.polimorfismo;
+
+public class PessoaTeste {
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+}

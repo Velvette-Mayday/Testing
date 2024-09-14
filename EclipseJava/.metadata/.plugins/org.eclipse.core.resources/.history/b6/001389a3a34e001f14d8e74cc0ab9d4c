@@ -1,0 +1,25 @@
+package lambdas;
+
+public class Produto {
+
+	String nome;
+	double preco;
+	double desconto;
+	
+	
+	
+	public Produto(String nome, double preco, double desconto) {
+		this.nome = nome;
+		this.preco = preco;
+		this.desconto = desconto;
+	}
+
+
+
+	boolean isExpensive(Produto produto) {
+		
+		return (produto.preco * (1 - produto.desconto)) >= 750;
+		
+	}
+	
+}

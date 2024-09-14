@@ -1,0 +1,30 @@
+package arraysAndCollections;
+
+import java.util.Scanner;
+
+public class DesafioArray {
+
+	public static void main(String[] args) {
+		
+		Scanner entry = new Scanner(System.in);
+		
+		int gradesAmount;
+		
+		System.out.print("Informe a quantidade de notas a serem passadas: ");
+		gradesAmount = entry.nextInt();
+		
+		double[] grades = new double[gradesAmount];
+		
+		for(int counter = 0; counter < grades.length; counter++ ) {
+			
+			System.out.print("\n\nInforme a nota "+ (counter+1) + ": ");
+			
+			
+		}
+		
+		
+		entry.close();
+		
+	}
+	
+}

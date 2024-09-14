@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+syntaxColoring.comment.color=255,204,255
+syntaxColoring.identifier.color=255,51,187
+syntaxColoring.keyword.color=221,51,126
+syntaxColoring.numberLiteral.color=255,204,255
+syntaxColoring.operator.color=255,162,255
+syntaxColoring.punctuation.color=255,51,187
+syntaxColoring.regExpLiteral.color=255,85,221
+syntaxColoring.stringLiteral.color=255,85,221

@@ -1,0 +1,10 @@
+package oo_heranca;
+
+public class Fit  extends Carro{
+String mostrarKm() {
+		
+		return String.format("O Fit roda a: %.2fKm/h", this.velocidade);
+		
+	}
+
+}

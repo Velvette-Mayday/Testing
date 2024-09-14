@@ -1,0 +1,18 @@
+package classe;
+
+public class DataTeste {
+	
+	public static void main(String[] args) {
+		
+		Data date1 = new Data();
+		
+		date1.dia = 16;
+		date1.mes = 10;
+		date1.ano = 2003;
+		
+		String formatdate = date1.obterData();
+		
+		System.out.println(formatdate);
+	}
+	
+}
